@@ -1,0 +1,63 @@
+
+IMaGinator v2.0 Copyright (c)2003-2007 Andreas Ziemer
+=====================================================
+eMail: info@a-z-e.de
+
+
+Plugin for TotalCommander 5.51 and above
+----------------------------------------
+TotalCommand is (c) Christian Ghisler, C.Ghisler & Co., Switzerland
+Obtain the latest version at http://www.ghisler.com
+
+Check http://totalcommander.a-z-e.de for the latest versions of the plugin.
+
+This plugin gives Total Commander access to raw disk images
+
+Key functions are:
+
+ - handle long filenames
+ - create disk images (1.2MB 1.44MB 2.88MB)
+ - create harddisk images (2..32MB) with or without master boot record
+ - copy files from and to IMG
+ - create/delete files/directories within IMG
+ - make image bootable (bootable, when copied back to a physical disk).
+   Requires a bootblock datafile. You can rip the bootblock of a formatted
+   disk in your floopy drive with a supplied utility.
+   To get the bootblock from the disk in A: to a file named BOOTBLK.BIN
+   type GETBOOT A: BOOTBLK.BIN
+ - Create a master boot record (MBR) with a single partition containing
+   the files you copy into the image. This option is only available with HD
+   images. A MBR file is included (FREEDOS under GNU GPL, www.freedos.org)
+
+ new in version 2.0
+
+ - read/write images to real physical disks (floppy images only for now)
+   via function in control panel.
+
+Automatic Installation:
+-----------------------
+Clicking on the distributed ZIP file from within TC will ask for
+installation.
+
+Manual Installation:
+--------------------
+a) copy IMG.WCX to your TotalCommander folder
+b) on the TotalCommander menubar click Configuration->Options
+c) select the Packer tab and click on "Configure packer extension DLLs"
+d) enter IMA as extension
+e) click "New type" and associate with IMG.WCX
+f) click OK
+
+This software is copyrighted free software! If you like to donate anyway,
+and I'd be pleased to give you my bankaccount ;-)
+
+Mail me about bugs or your opinions.
+
+Legal disclaimer:
+-----------------
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR ANY PARTICULAR PURPOSE.
+
+
+*************************************************************************
